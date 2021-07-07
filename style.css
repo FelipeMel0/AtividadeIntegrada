@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -62,6 +65,25 @@ header a:hover{
 .areaAluno:hover{
     border: solid 1px rgb(161, 161, 161);
 }
+.botaoHome{
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    position: fixed;
+    font-size: 25px;
+    background-color: rgb(124, 124, 124);
+    border: solid 2px black;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    bottom: 80px;
+    right: 52px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 main{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -80,12 +102,21 @@ main{
     width: 100vw; 
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     background-image: url(img/ImagemsDeFundo.jpg);
     background-size: cover;
     color: white;
+}
+.paginaTituloTexto{
+    font-size: 42px;
+    margin-bottom: 5vh;
+}
+.subtitulo{
+    font-size: 28px;
+    
 }
 .paginaFPOO{
     width: 100vw;
@@ -95,10 +126,18 @@ main{
     align-items: center;
     flex-direction: column;
     position: relative;
-    background-color: rgb(229, 255, 229);
+    /* background-color: rgb(229, 255, 229); */
+    /* background: rgb(252,176,69);
+    background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+    /* background: rgb(252,70,69);
+background: linear-gradient(90deg, rgba(252,70,69,1) 0%, rgba(253,155,29,1) 100%); */
+background: rgb(224,206,14);
+background: linear-gradient(153deg, rgba(224,206,14,1) 0%, rgba(238,96,70,1) 30%, rgba(173,76,247,1) 70%, rgba(239,70,252,1) 100%);
+    color: white;
 }
 .tituloFPOO{
     margin-top: 25px;
+    color: white;
 }
 
 .textosFPOO{
@@ -109,7 +148,10 @@ main{
     font-size: 22px;
     margin-top: 150px;
     gap: 15px;
+    color: white;
 }
+
+
 .imagensFPOO{
     display: flex;
     flex-direction: column;
@@ -127,12 +169,14 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 229);
+    background: rgb(14,150,224);
+    background: linear-gradient(153deg, rgba(14,150,224,1) 0%, rgba(70,86,238,1) 30%, rgba(173,76,247,1) 70%, rgba(239,70,252,1) 100%);
 }
 .tituloLIMA{
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    color: white;
 }
 .textosLIMA{
     display: flex;
@@ -143,6 +187,7 @@ main{
     margin-right: 15px;
     margin-left: 15px;
     max-width: 98.5vw;
+    color: white;
 }
 .divImagensLIMA{
     display: flex;
@@ -160,19 +205,25 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 229, 229);
+    background: rgb(212,255,20);
+    background: linear-gradient(153deg, rgba(212,255,20,1) 0%, rgba(32,201,192,1) 30%, rgba(123,76,247,1) 70%, rgba(252,70,216,1) 100%);
 }
 .tituloHARE{
     display: flex;
     margin-top: 25px;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .textosHARE{
     margin-top: 15px;
     font-size: 22px;
     max-width: 100vw;
     margin-right: 60px;
+    color: white;
+}
+.textosHARE hr{
+    color: white;
 }
 .texto1HARE{
     display: flex;
@@ -207,7 +258,11 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(229, 229, 255);
+    /* background-color: rgb(229, 229, 255); */
+    /* background: rgb(224,14,66);
+    background: linear-gradient(90deg, rgba(224,14,66,1) 0%, rgba(126,70,252,1) 100%); */
+    background: rgb(252,70,216);
+background: linear-gradient(153deg, rgba(252,70,216,1) 0%, rgba(123,76,247,1) 30%, rgba(123,76,247,1) 70%, rgba(252,70,216,1) 100%);
     
 }
 .tituloSOP{
@@ -215,6 +270,7 @@ main{
     margin-top: 25px;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .divTextosSOP{
     display: flex;
@@ -223,12 +279,14 @@ main{
     font-size: 22px;
     justify-content: space-around;
     margin-left: 10px;
+    color: white;
     
 }
 .textoIntroducaoSOP{
     margin-left: 10px;
     margin-right: 10px;
     font-size: 22px;
+    color: white;
 }
 .textoIntroducaoSOP p{
     margin-right: 10px;
@@ -245,7 +303,8 @@ main{
 footer{
     height: 60px;
     display: flex;
-    padding: 0vh 4vw;
+    justify-content:center;
+    align-items: center;
     position: relative;
     background-color: black;
     color: white;

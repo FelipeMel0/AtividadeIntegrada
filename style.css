@@ -1,0 +1,398 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    'header'
+    'main';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    height: 60px;
+    display: flex;
+    padding: 0vh 4vw;
+    position: relative;
+    background-color: black;
+}
+header a{
+    transition: all 0.5s;
+}
+header a:hover{
+    color: rgb(161, 161, 161);
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    gap: 63vw;
+    height: 60px;
+    align-items: center;
+}
+.links a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+}
+.links ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    background-color: black;
+}
+.areaAluno{
+    width: 145px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: black;
+}
+.areaAluno:hover{
+    border: solid 1px rgb(161, 161, 161);
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    'paginaTitulo'
+    'paginaFPOO'
+    'paginaLIMA';
+}
+.paginaTitulo:nth-child(1){
+    grid-area: paginaTitulo;
+}
+.paginaFPOO:nth-child(2){
+    grid-area: paginaFPOO;
+}
+.paginaTitulo{
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(img/ImagemsDeFundo.jpg);
+    background-size: cover;
+    color: white;
+}
+.paginaFPOO{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(229, 255, 229);
+}
+.tituloFPOO{
+    margin-top: 25px;
+}
+
+.textosFPOO{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 600px;
+    font-size: 22px;
+    margin-top: 150px;
+    gap: 15px;
+}
+.imagensFPOO{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 600px;
+    height: 250px;
+}
+.textosImagensFPOO{
+   margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.paginaLIMA{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 229);
+}
+.tituloLIMA{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.textosLIMA{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 22px;
+    margin-right: 15px;
+    margin-left: 15px;
+    max-width: 98.5vw;
+}
+.divImagensLIMA{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-around;
+    width: 100vw;
+}
+.imagensLIMA{
+    width: 45vw;
+    height: 45vh;
+}
+.paginaHARE{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 229, 229);
+}
+.tituloHARE{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.textosHARE{
+    margin-top: 15px;
+    font-size: 22px;
+    max-width: 100vw;
+    margin-right: 60px;
+}
+.texto1HARE{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.texto2HARE{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.texto3HARE{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.imagensHARE{
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.paginaSOP{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(229, 229, 255);
+    
+}
+.tituloSOP{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.divTextosSOP{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    font-size: 22px;
+    justify-content: space-around;
+    margin-left: 10px;
+    
+}
+.textoIntroducaoSOP{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+.textoIntroducaoSOP p{
+    margin-right: 10px;
+}
+.texto1SOP{
+    max-width: 23.94vw
+}
+.texto2SOP{
+    max-width: 25.94vw;
+}
+.texto3SOP{
+    max-width: 24.94vw;
+}
+footer{
+    height: 60px;
+    display: flex;
+    padding: 0vh 4vw;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+footer p{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 758px){
+    header{
+        width: 100vw;
+        height: 50px;
+    }
+    header a{
+        font-size: 7px;
+    }
+    .links{
+        gap: 65px;
+    }
+    .areaAluno{
+        width: 60px;
+        height: 20px;
+    }
+    .paginaTitulo{
+        font-size: 10px;
+    }
+    .paginaTituloTexto{
+        margin-right: 155px;
+        max-width: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paginaFPOO{
+        font-size: 10px;
+        max-height: 70vh;
+    }
+    .imagensFPOO{
+        flex-direction: row;
+        width: 150px;
+        height: 150px;
+    }
+    .textosFPOO{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .textosImagensFPOO{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .divImagensFPOO{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .paginaLIMA{
+        font-size: 10px;
+        max-width: 100vw;
+        max-height: 70vh;
+    }
+    .textosLIMA{
+        font-size: 10px;
+    }
+    .imagensLIMA{
+        width: 150px;
+        height: 150px;
+    }
+
+    .paginaHARE{
+        max-height: 70vh;
+        font-size: 10px;
+       
+    }
+    .imagensHARE{
+        width: 100px;
+        height: 100px;
+    }
+    .texto1HARE{
+        font-size: 10px;
+    }
+    .texto1HARE p{
+        font-size: 7px;
+        max-width: 150px;
+        
+    }
+    .texto2HARE{
+        font-size: 10px;
+    }
+    .texto2HARE p{
+        font-size: 7px;
+        max-width: 150px;
+    }
+    .texto3HARE{
+        font-size: 7px;
+    }
+    .texto3HARE p{
+        font-size: 7px;
+        max-width: 150px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .paginaSOP{
+        max-height: 70vh;
+        font-size: 10px;
+    }
+    .textoIntroducaoSOP{
+        font-size: 10px;
+    }
+    .texto1SOP{
+        font-size: 10px;
+    }
+    .texto2SOP{
+        font-size: 10px;
+    }
+    .texto3SOP{
+        font-size: 10px;
+    }
+    .divTextosSOP{
+        margin-top: 5px;
+    }
+    .divTextosSOP video{
+        width: 100px;
+        height: 150px;
+    }
+
+    footer{
+        font-size: 10px;
+        width: 100vw;
+         display: flex;
+          justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        /* margin-right: 500vw; */
+    }
+}
